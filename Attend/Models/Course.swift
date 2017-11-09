@@ -7,3 +7,36 @@
 //
 
 import Foundation
+
+class Course
+{
+    let courseCode: String
+    let credit: Int
+    let timeStart: String?
+    let timeStop: String?
+    let sectionNumber: Int?
+    
+    init(courseCode: String,
+         credit: Int,
+         timeStart: String?,
+         timeStop: String?,
+         sectionNumber: Int?)
+    {
+        self.courseCode = courseCode
+        self.credit = credit
+        self.timeStart = timeStart
+        self.timeStop = timeStop
+        self.sectionNumber = sectionNumber
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
