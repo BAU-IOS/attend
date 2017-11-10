@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8412F1A61FB5EA2500A52633 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8412F1A51FB5EA2500A52633 /* Student.swift */; };
 		E2ECA26C1FB43FF000579996 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2ECA26B1FB43FF000579996 /* AppDelegate.swift */; };
 		E2ECA26E1FB43FF000579996 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2ECA26D1FB43FF000579996 /* ViewController.swift */; };
 		E2ECA2711FB43FF000579996 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2ECA26F1FB43FF000579996 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8412F1A51FB5EA2500A52633 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		E2ECA2681FB43FEF00579996 /* Attend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Attend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2ECA26B1FB43FF000579996 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2ECA26D1FB43FF000579996 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				E2ECA2811FB45F1500579996 /* Course.swift */,
+				8412F1A51FB5EA2500A52633 /* Student.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 				E2ECA2821FB45F1500579996 /* Course.swift in Sources */,
 				E2ECA26E1FB43FF000579996 /* ViewController.swift in Sources */,
 				E2ECA26C1FB43FF000579996 /* AppDelegate.swift in Sources */,
+				8412F1A61FB5EA2500A52633 /* Student.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
