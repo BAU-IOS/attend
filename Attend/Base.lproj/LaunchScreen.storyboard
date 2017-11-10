@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13526" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Chalkduster.ttf">
+            <string>Chalkduster</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
@@ -27,35 +31,33 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You ask the attendance from us" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QLG-tB-p6h" userLabel="labelAppDescription">
-                                <rect key="frame" x="66.5" y="211" width="242" height="21"/>
+                                <rect key="frame" x="66.5" y="188" width="242" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.19177871768810809" green="0.3776793200857792" blue="0.61962488077465117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright © 2017 - BAU-IOS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.75" translatesAutoresizingMaskIntoConstraints="NO" id="gP6-et-u1s" userLabel="labelTrademark">
+                                <rect key="frame" x="77.5" y="626" width="220.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.90371936497910654" green="0.74654325474757854" blue="0.096933546798798148" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Attend" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TQ4-qv-TmR">
+                                <rect key="frame" x="113" y="308" width="149.5" height="51"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This application is trademarked to US askldfj lasdjflkajsdf;l asjdf;lasjdf; lasdf" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.75" translatesAutoresizingMaskIntoConstraints="NO" id="gP6-et-u1s" userLabel="labelTrademark">
-                                <rect key="frame" x="12" y="626" width="351" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EYk-04-mci" userLabel="viewCurtain">
-                                <rect key="frame" x="127.5" y="44" width="120" height="120"/>
-                                <color key="backgroundColor" red="0.19848927804632666" green="1" blue="0.16353989274152647" alpha="0.37564212328767121" colorSpace="custom" customColorSpace="displayP3"/>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.96934521198272705" green="0.82798588275909424" blue="0.29780736565589905" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="gP6-et-u1s" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-12" id="2HA-5d-wf0"/>
+                            <constraint firstItem="TQ4-qv-TmR" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="0ZA-jT-eR7"/>
                             <constraint firstItem="SvO-c4-Lwl" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="2IR-HV-XML"/>
-                            <constraint firstItem="EYk-04-mci" firstAttribute="centerX" secondItem="SvO-c4-Lwl" secondAttribute="centerX" id="6gN-ac-nFN"/>
                             <constraint firstItem="QLG-tB-p6h" firstAttribute="centerX" secondItem="SvO-c4-Lwl" secondAttribute="centerX" id="Fhh-J2-NXr"/>
                             <constraint firstItem="SvO-c4-Lwl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="NWr-ob-nip"/>
-                            <constraint firstItem="EYk-04-mci" firstAttribute="centerY" secondItem="SvO-c4-Lwl" secondAttribute="centerY" id="RHY-20-8Oi"/>
-                            <constraint firstItem="QLG-tB-p6h" firstAttribute="top" secondItem="SvO-c4-Lwl" secondAttribute="bottom" constant="47" id="WaQ-m5-gxP"/>
-                            <constraint firstItem="gP6-et-u1s" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="Yvx-KP-Acw"/>
+                            <constraint firstItem="QLG-tB-p6h" firstAttribute="top" secondItem="SvO-c4-Lwl" secondAttribute="bottom" constant="24" id="WaQ-m5-gxP"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gP6-et-u1s" secondAttribute="bottom" constant="20" id="cMC-Zo-BK9"/>
-                            <constraint firstItem="EYk-04-mci" firstAttribute="height" secondItem="SvO-c4-Lwl" secondAttribute="height" id="evN-gV-c2W"/>
-                            <constraint firstItem="EYk-04-mci" firstAttribute="width" secondItem="SvO-c4-Lwl" secondAttribute="width" id="fDl-ZU-6SM"/>
+                            <constraint firstItem="TQ4-qv-TmR" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="dem-zq-msW"/>
                             <constraint firstItem="gP6-et-u1s" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="mQ2-sc-Q35"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
