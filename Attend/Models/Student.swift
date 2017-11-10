@@ -19,7 +19,7 @@ class Student
     {
         self.fullName = fullName
         self.studentNumber = studentNumber
-        self.department = deparment
+        self.department = department
         self.classNo = classNo
     }
 }
