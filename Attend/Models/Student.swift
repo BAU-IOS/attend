@@ -10,21 +10,49 @@ import Foundation
 
 class Student
 {
-    var fullName: String
     let firstName: String
     let lastName: String
     let studentNumber: String
     let department: String
     let classNo: Int
+    var fullName: String {
+        return self.firstName + " " + self.lastName
+    }
     
-    init(firstName: String, lastName: String, studentNumber: String, department: String, classNo: Int)
+    init(firstName: String,
+         lastName: String,
+         studentNumber: String,
+         department: String,
+         classNo: Int)
     {
         self.firstName = firstName
         self.lastName = lastName
         self.studentNumber = studentNumber
         self.department = department
         self.classNo = classNo
-        
-        fullName = firstName + " " + lastName
     }
+//
+//    func getFullName() -> String
+//    {
+//        return self.firstName + " " + self.lastName
+//    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
