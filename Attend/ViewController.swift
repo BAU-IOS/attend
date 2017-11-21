@@ -15,12 +15,6 @@ class ViewController: UIViewController
         super.viewDidLoad()
         self.navigationItem.title = "Courses"
         self.addCourseButtonToRight()
-        let ahmet = Student(
-            firstName: "Ahmet",
-            lastName: "Aykac",
-            studentNumber: "StudentNum",
-            department: "Comp. Science",
-            classNo: 4440)
     }
     
     func addCourseButtonToRight()
@@ -38,15 +32,12 @@ class ViewController: UIViewController
     
     @objc func userClickedAddCourse()
     {
-        let addCourseVC = AddCourseVC(
-            nibName: "AddCourseVC",
-            bundle: nil)
+        let addCourseVC = AddCourseVC(nibName: nil, bundle: nil)
         
         self.navigationController?.pushViewController(
             addCourseVC,
             animated: true
         )
-        debugPrint("User clicked add course.")
     }
 }
 
