@@ -16,6 +16,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddCourseVC" customModule="Attend" customModuleProvider="target">
             <connections>
+                <outlet property="labelCourseCredit" destination="fxp-Bj-1n1" id="HVP-Ip-GHe"/>
+                <outlet property="pickerCourseDay" destination="Ppx-fF-4Ny" id="T1K-Nz-2C2"/>
+                <outlet property="stepperCourseCredit" destination="fbI-Sp-jIM" id="qIV-Pl-Vrg"/>
+                <outlet property="textFieldCourseName" destination="yDC-jK-wzT" id="zYR-oA-T2w"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -25,27 +29,84 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Course Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oeV-Kn-qwk">
-                    <rect key="frame" x="16" y="20" width="105" height="21"/>
+                    <rect key="frame" x="16" y="36" width="104.5" height="20.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="cop cop lesson" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="yDC-jK-wzT">
-                    <rect key="frame" x="16" y="49" width="343" height="30"/>
+                    <rect key="frame" x="16" y="64.5" width="343" height="30"/>
                     <color key="textColor" red="0.91764705879999997" green="0.1333333333" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Course Credit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AGo-Rl-XV4">
+                    <rect key="frame" x="16" y="108.5" width="106" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="fbI-Sp-jIM">
+                    <rect key="frame" x="265" y="104.5" width="94" height="29"/>
+                    <connections>
+                        <action selector="actionCreditChanged:" destination="-1" eventType="valueChanged" id="KVU-C2-nqe"/>
+                    </connections>
+                </stepper>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fxp-Bj-1n1">
+                    <rect key="frame" x="153" y="108.5" width="10.5" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ppx-fF-4Ny">
+                    <rect key="frame" x="16" y="145" width="343" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="sp6-Rk-rCg"/>
+                    </constraints>
+                </pickerView>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="6SF-bS-lRJ">
+                    <rect key="frame" x="16" y="253" width="343" height="110"/>
+                    <subviews>
+                        <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="qfM-Bl-2AN">
+                            <rect key="frame" x="0.0" y="0.0" width="171.5" height="110"/>
+                            <date key="date" timeIntervalSinceReferenceDate="533124542.532408">
+                                <!--2017-11-23 10:09:02 +0000-->
+                            </date>
+                        </datePicker>
+                        <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="FXb-Ob-i8m">
+                            <rect key="frame" x="171.5" y="0.0" width="171.5" height="110"/>
+                            <date key="date" timeIntervalSinceReferenceDate="533124553.20955801">
+                                <!--2017-11-23 10:09:13 +0000-->
+                            </date>
+                        </datePicker>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="110" id="rpV-sR-z9G"/>
+                    </constraints>
+                </stackView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="AGo-Rl-XV4" firstAttribute="leading" secondItem="yDC-jK-wzT" secondAttribute="leading" id="1Zl-hm-bhG"/>
                 <constraint firstItem="oeV-Kn-qwk" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="2X7-dD-l0A"/>
-                <constraint firstItem="oeV-Kn-qwk" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="RbG-EE-Roh"/>
+                <constraint firstItem="fxp-Bj-1n1" firstAttribute="centerY" secondItem="AGo-Rl-XV4" secondAttribute="centerY" id="40D-j5-I9g"/>
+                <constraint firstItem="6SF-bS-lRJ" firstAttribute="trailing" secondItem="Ppx-fF-4Ny" secondAttribute="trailing" id="EMJ-Hs-K0M"/>
+                <constraint firstItem="Ppx-fF-4Ny" firstAttribute="leading" secondItem="AGo-Rl-XV4" secondAttribute="leading" id="KA8-n3-P26"/>
+                <constraint firstItem="fbI-Sp-jIM" firstAttribute="trailing" secondItem="yDC-jK-wzT" secondAttribute="trailing" id="Ls3-Ne-xjx"/>
+                <constraint firstItem="oeV-Kn-qwk" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="RbG-EE-Roh"/>
+                <constraint firstItem="fxp-Bj-1n1" firstAttribute="leading" secondItem="AGo-Rl-XV4" secondAttribute="trailing" constant="31" id="UG0-wW-fqm"/>
+                <constraint firstItem="AGo-Rl-XV4" firstAttribute="top" secondItem="yDC-jK-wzT" secondAttribute="bottom" constant="14" id="Wv2-rr-xoj"/>
+                <constraint firstItem="fbI-Sp-jIM" firstAttribute="centerY" secondItem="AGo-Rl-XV4" secondAttribute="centerY" id="XgV-Yw-IY8"/>
+                <constraint firstItem="Ppx-fF-4Ny" firstAttribute="top" secondItem="AGo-Rl-XV4" secondAttribute="bottom" constant="16" id="Yaz-AH-Hrl"/>
                 <constraint firstItem="yDC-jK-wzT" firstAttribute="top" secondItem="oeV-Kn-qwk" secondAttribute="bottom" constant="8" id="YeV-EA-XBg"/>
+                <constraint firstItem="6SF-bS-lRJ" firstAttribute="leading" secondItem="Ppx-fF-4Ny" secondAttribute="leading" id="ZXW-Xj-eqm"/>
                 <constraint firstItem="yDC-jK-wzT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="aFu-mg-RWs"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="yDC-jK-wzT" secondAttribute="trailing" constant="16" id="i7q-2u-03u"/>
+                <constraint firstItem="6SF-bS-lRJ" firstAttribute="top" secondItem="Ppx-fF-4Ny" secondAttribute="bottom" constant="8" id="qjf-8k-UX8"/>
+                <constraint firstItem="Ppx-fF-4Ny" firstAttribute="trailing" secondItem="fbI-Sp-jIM" secondAttribute="trailing" id="uFU-Vs-ZYP"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="101.5" y="94.5"/>
         </view>
     </objects>
 </document>

@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		8412F1A61FB5EA2500A52633 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8412F1A51FB5EA2500A52633 /* Student.swift */; };
+		E29F6F0F1FC6C644003D7A67 /* DayType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29F6F0E1FC6C644003D7A67 /* DayType.swift */; };
+		E29F6F111FC6CEF9003D7A67 /* AddCourseVCXPickerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29F6F101FC6CEF9003D7A67 /* AddCourseVCXPickerDelegate.swift */; };
+		E29F6F131FC6CF8B003D7A67 /* AddCourseVCXPickerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29F6F121FC6CF8B003D7A67 /* AddCourseVCXPickerDataSource.swift */; };
 		E2C4A6D91FBD8E9E004D3F91 /* AddCourseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C4A6D71FBD8E9E004D3F91 /* AddCourseVC.swift */; };
 		E2C4A6DA1FBD8E9E004D3F91 /* AddCourseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2C4A6D81FBD8E9E004D3F91 /* AddCourseVC.xib */; };
 		E2ECA26C1FB43FF000579996 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2ECA26B1FB43FF000579996 /* AppDelegate.swift */; };
@@ -20,6 +23,9 @@
 
 /* Begin PBXFileReference section */
 		8412F1A51FB5EA2500A52633 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		E29F6F0E1FC6C644003D7A67 /* DayType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayType.swift; sourceTree = "<group>"; };
+		E29F6F101FC6CEF9003D7A67 /* AddCourseVCXPickerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCourseVCXPickerDelegate.swift; sourceTree = "<group>"; };
+		E29F6F121FC6CF8B003D7A67 /* AddCourseVCXPickerDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCourseVCXPickerDataSource.swift; sourceTree = "<group>"; };
 		E2C4A6D71FBD8E9E004D3F91 /* AddCourseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCourseVC.swift; sourceTree = "<group>"; };
 		E2C4A6D81FBD8E9E004D3F91 /* AddCourseVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddCourseVC.xib; sourceTree = "<group>"; };
 		E2ECA2681FB43FEF00579996 /* Attend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Attend.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,11 +49,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E29F6F0D1FC6C631003D7A67 /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				E29F6F0E1FC6C644003D7A67 /* DayType.swift */,
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
 		E2C4A6D51FBD8DD6004D3F91 /* AddCourseVC */ = {
 			isa = PBXGroup;
 			children = (
 				E2C4A6D71FBD8E9E004D3F91 /* AddCourseVC.swift */,
 				E2C4A6D81FBD8E9E004D3F91 /* AddCourseVC.xib */,
+				E29F6F101FC6CEF9003D7A67 /* AddCourseVCXPickerDelegate.swift */,
+				E29F6F121FC6CF8B003D7A67 /* AddCourseVCXPickerDataSource.swift */,
 			);
 			path = AddCourseVC;
 			sourceTree = "<group>";
@@ -94,6 +110,7 @@
 		E2ECA27D1FB45E0400579996 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E29F6F0D1FC6C631003D7A67 /* Types */,
 				E2ECA2811FB45F1500579996 /* Course.swift */,
 				8412F1A51FB5EA2500A52633 /* Student.swift */,
 			);
@@ -175,7 +192,10 @@
 			files = (
 				E2ECA2821FB45F1500579996 /* Course.swift in Sources */,
 				E2C4A6D91FBD8E9E004D3F91 /* AddCourseVC.swift in Sources */,
+				E29F6F0F1FC6C644003D7A67 /* DayType.swift in Sources */,
 				E2ECA26E1FB43FF000579996 /* ViewController.swift in Sources */,
+				E29F6F111FC6CEF9003D7A67 /* AddCourseVCXPickerDelegate.swift in Sources */,
+				E29F6F131FC6CF8B003D7A67 /* AddCourseVCXPickerDataSource.swift in Sources */,
 				E2ECA26C1FB43FF000579996 /* AppDelegate.swift in Sources */,
 				8412F1A61FB5EA2500A52633 /* Student.swift in Sources */,
 			);
