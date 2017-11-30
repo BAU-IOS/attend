@@ -8,25 +8,37 @@
 
 import Foundation
 
-class Course
+class Course: Codable
 {
-    let courseCode: String
+    let courseName: String
     let credit: Int
-    let timeStart: String?
-    let timeStop: String?
-    let sectionNumber: Int?
+    let day: String
+    let timeStart: String
+    let timeStop: String
     
-    init(courseCode: String,
+    init(courseName: String,
          credit: Int,
-         timeStart: String?,
-         timeStop: String?,
-         sectionNumber: Int?)
+         day: String,
+         timeStart: String,
+         timeStop: String)
     {
-        self.courseCode = courseCode
+        self.courseName = courseName
         self.credit = credit
+        self.day = day
         self.timeStart = timeStart
         self.timeStop = timeStop
-        self.sectionNumber = sectionNumber
+    }
+    
+    func toJsonString() -> String
+    {
+        let encoder = JSONEncoder()
+        let encodedCourseData = try! encoder.encode(self)
+        let encodedJson = String(
+            data: encodedCourseData,
+            encoding: String.Encoding.utf8
+        )
+        
+        return encodedJson!
     }
 }
 

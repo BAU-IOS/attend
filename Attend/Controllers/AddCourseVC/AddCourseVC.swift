@@ -18,6 +18,10 @@ class AddCourseVC: UIViewController
     
     @IBOutlet weak var pickerCourseDay: UIPickerView!
     
+    @IBOutlet weak var datePickerStart: UIDatePicker!
+    
+    @IBOutlet weak var datePickerStop: UIDatePicker!
+    
     var selectedCourseCredit: Int = 0 {
         willSet(newValue) {
             self.labelCourseCredit.text = String(newValue)
@@ -32,6 +36,7 @@ class AddCourseVC: UIViewController
     }
     
     let allDays = DayType.getAllDays()
+    var selectedDayType: DayType?
     
     override func viewDidLoad()
     {
@@ -60,13 +65,40 @@ class AddCourseVC: UIViewController
     
     @objc func saveCourse()
     {
-        debugPrint("You should now save the course.")
+        let courseName = self.textFieldCourseName.text ?? ""
+        
+        let isAddingSuccess = DataHelper.addCourse(named: courseName)
+        if isAddingSuccess{
+            debugPrint("Added \(courseName) succeeded.")
+            let courses = DataHelper.getCourseNames()
+            debugPrint("Your courses are now \(courses)")
+        }else {
+            debugPrint("Added \(courseName) failed")
+        }
+        
+        let courseCredit = self.selectedCourseCredit
+        let courseDay = self.selectedDayType?.rawValue ?? ""
+        let startDate = self.datePickerStart.date
+        let stopDate = self.datePickerStop.date
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.timeStyle = .short
+        let timeStartString = dateFormatter.string(from: startDate)
+        let timeStopString = dateFormatter.string(from: stopDate)
+        
+        let courseToSave = Course(
+            courseName: courseName,
+            credit: courseCredit,
+            day: courseDay,
+            timeStart: timeStartString,
+            timeStop: timeStopString
+        )
+        
+        let courseJson = courseToSave.toJsonString()
+        
+        debugPrint("You should now save the course. \(courseJson)")
     }
 }
-
-
-
-
 
 
 

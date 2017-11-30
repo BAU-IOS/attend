@@ -11,7 +11,8 @@ import UIKit
 extension AddCourseVC: UIPickerViewDelegate
 {
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        
+        let daySelection = self.allDays[row]
+        self.selectedDayType = daySelection
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {

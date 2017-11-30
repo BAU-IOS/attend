@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4919887F1FCFFD2A0077D130 /* DataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4919887E1FCFFD2A0077D130 /* DataHelper.swift */; };
 		8412F1A61FB5EA2500A52633 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8412F1A51FB5EA2500A52633 /* Student.swift */; };
 		E29F6F0F1FC6C644003D7A67 /* DayType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29F6F0E1FC6C644003D7A67 /* DayType.swift */; };
 		E29F6F111FC6CEF9003D7A67 /* AddCourseVCXPickerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29F6F101FC6CEF9003D7A67 /* AddCourseVCXPickerDelegate.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4919887E1FCFFD2A0077D130 /* DataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHelper.swift; sourceTree = "<group>"; };
 		8412F1A51FB5EA2500A52633 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		E29F6F0E1FC6C644003D7A67 /* DayType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayType.swift; sourceTree = "<group>"; };
 		E29F6F101FC6CEF9003D7A67 /* AddCourseVCXPickerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCourseVCXPickerDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +51,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4919887D1FCFFD080077D130 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				4919887E1FCFFD2A0077D130 /* DataHelper.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		E29F6F0D1FC6C631003D7A67 /* Types */ = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +105,7 @@
 		E2ECA26A1FB43FEF00579996 /* Attend */ = {
 			isa = PBXGroup;
 			children = (
+				4919887D1FCFFD080077D130 /* Data */,
 				E2C4A6D61FBD8DF7004D3F91 /* Controllers */,
 				E2ECA27D1FB45E0400579996 /* Models */,
 				E2ECA26B1FB43FF000579996 /* AppDelegate.swift */,
@@ -190,6 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4919887F1FCFFD2A0077D130 /* DataHelper.swift in Sources */,
 				E2ECA2821FB45F1500579996 /* Course.swift in Sources */,
 				E2C4A6D91FBD8E9E004D3F91 /* AddCourseVC.swift in Sources */,
 				E29F6F0F1FC6C644003D7A67 /* DayType.swift in Sources */,
@@ -335,7 +347,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RX9GZP767B;
+				DEVELOPMENT_TEAM = M5G4V3E2PX;
 				INFOPLIST_FILE = Attend/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -351,7 +363,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RX9GZP767B;
+				DEVELOPMENT_TEAM = M5G4V3E2PX;
 				INFOPLIST_FILE = Attend/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
