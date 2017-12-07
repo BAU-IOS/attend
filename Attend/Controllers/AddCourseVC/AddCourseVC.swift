@@ -67,15 +67,6 @@ class AddCourseVC: UIViewController
     {
         let courseName = self.textFieldCourseName.text ?? ""
         
-        let isAddingSuccess = DataHelper.addCourse(named: courseName)
-        if isAddingSuccess{
-            debugPrint("Added \(courseName) succeeded.")
-            let courses = DataHelper.getCourseNames()
-            debugPrint("Your courses are now \(courses)")
-        }else {
-            debugPrint("Added \(courseName) failed")
-        }
-        
         let courseCredit = self.selectedCourseCredit
         let courseDay = self.selectedDayType?.rawValue ?? ""
         let startDate = self.datePickerStart.date
@@ -94,11 +85,28 @@ class AddCourseVC: UIViewController
             timeStop: timeStopString
         )
         
-        let courseJson = courseToSave.toJsonString()
+        let isAddingSuccess = DataHelper.addCourse(named: courseName)
         
-        debugPrint("You should now save the course. \(courseJson)")
+        if isAddingSuccess
+        {
+            FileHelper.saveCourse(courseToSave)
+            debugPrint("Added \(courseName) succeeded.")
+            let courses = DataHelper.getCourseNames()
+            debugPrint("Your courses are now \(courses)")
+            self.navigationController?.popViewController(animated: true)
+        }else
+        {
+            debugPrint("Added \(courseName) failed")
+        }
     }
 }
+
+
+
+
+
+
+
 
 
 

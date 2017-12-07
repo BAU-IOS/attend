@@ -40,6 +40,23 @@ class Course: Codable
         
         return encodedJson!
     }
+    
+    func getFileUrl() -> URL
+    {
+        return Course.createFileUrl(courseName: self.courseName)
+    }
+    
+    class func createFileUrl(courseName: String) -> URL
+    {
+        let userDocumentsFolderPath = NSSearchPathForDirectoriesInDomains(
+            .documentDirectory,
+            .userDomainMask, true
+            )[0]
+        
+        let path = userDocumentsFolderPath + "/\(courseName)"
+        let fileURL = URL(fileURLWithPath: path)
+        return fileURL
+    }
 }
 
 

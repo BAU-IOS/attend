@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		4919887F1FCFFD2A0077D130 /* DataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4919887E1FCFFD2A0077D130 /* DataHelper.swift */; };
+		492A49431FD92C77009AE5EC /* FileHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492A49421FD92C77009AE5EC /* FileHelper.swift */; };
+		492A49471FD94552009AE5EC /* CourseItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492A49451FD94552009AE5EC /* CourseItemCell.swift */; };
+		492A49481FD94552009AE5EC /* CourseItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 492A49461FD94552009AE5EC /* CourseItemCell.xib */; };
 		8412F1A61FB5EA2500A52633 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8412F1A51FB5EA2500A52633 /* Student.swift */; };
 		E29F6F0F1FC6C644003D7A67 /* DayType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29F6F0E1FC6C644003D7A67 /* DayType.swift */; };
 		E29F6F111FC6CEF9003D7A67 /* AddCourseVCXPickerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29F6F101FC6CEF9003D7A67 /* AddCourseVCXPickerDelegate.swift */; };
@@ -15,7 +18,7 @@
 		E2C4A6D91FBD8E9E004D3F91 /* AddCourseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C4A6D71FBD8E9E004D3F91 /* AddCourseVC.swift */; };
 		E2C4A6DA1FBD8E9E004D3F91 /* AddCourseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2C4A6D81FBD8E9E004D3F91 /* AddCourseVC.xib */; };
 		E2ECA26C1FB43FF000579996 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2ECA26B1FB43FF000579996 /* AppDelegate.swift */; };
-		E2ECA26E1FB43FF000579996 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2ECA26D1FB43FF000579996 /* ViewController.swift */; };
+		E2ECA26E1FB43FF000579996 /* CoursesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2ECA26D1FB43FF000579996 /* CoursesVC.swift */; };
 		E2ECA2711FB43FF000579996 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2ECA26F1FB43FF000579996 /* Main.storyboard */; };
 		E2ECA2731FB43FF000579996 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2ECA2721FB43FF000579996 /* Assets.xcassets */; };
 		E2ECA2761FB43FF000579996 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2ECA2741FB43FF000579996 /* LaunchScreen.storyboard */; };
@@ -24,6 +27,9 @@
 
 /* Begin PBXFileReference section */
 		4919887E1FCFFD2A0077D130 /* DataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHelper.swift; sourceTree = "<group>"; };
+		492A49421FD92C77009AE5EC /* FileHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileHelper.swift; sourceTree = "<group>"; };
+		492A49451FD94552009AE5EC /* CourseItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseItemCell.swift; sourceTree = "<group>"; };
+		492A49461FD94552009AE5EC /* CourseItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CourseItemCell.xib; sourceTree = "<group>"; };
 		8412F1A51FB5EA2500A52633 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		E29F6F0E1FC6C644003D7A67 /* DayType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayType.swift; sourceTree = "<group>"; };
 		E29F6F101FC6CEF9003D7A67 /* AddCourseVCXPickerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCourseVCXPickerDelegate.swift; sourceTree = "<group>"; };
@@ -32,7 +38,7 @@
 		E2C4A6D81FBD8E9E004D3F91 /* AddCourseVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddCourseVC.xib; sourceTree = "<group>"; };
 		E2ECA2681FB43FEF00579996 /* Attend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Attend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2ECA26B1FB43FF000579996 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E2ECA26D1FB43FF000579996 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E2ECA26D1FB43FF000579996 /* CoursesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesVC.swift; sourceTree = "<group>"; };
 		E2ECA2701FB43FF000579996 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E2ECA2721FB43FF000579996 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2ECA2751FB43FF000579996 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,8 +61,27 @@
 			isa = PBXGroup;
 			children = (
 				4919887E1FCFFD2A0077D130 /* DataHelper.swift */,
+				492A49421FD92C77009AE5EC /* FileHelper.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		492A49411FD92C11009AE5EC /* CoursesVC */ = {
+			isa = PBXGroup;
+			children = (
+				492A49441FD944F7009AE5EC /* Cells */,
+				E2ECA26D1FB43FF000579996 /* CoursesVC.swift */,
+			);
+			path = CoursesVC;
+			sourceTree = "<group>";
+		};
+		492A49441FD944F7009AE5EC /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				492A49451FD94552009AE5EC /* CourseItemCell.swift */,
+				492A49461FD94552009AE5EC /* CourseItemCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		E29F6F0D1FC6C631003D7A67 /* Types */ = {
@@ -81,6 +106,7 @@
 		E2C4A6D61FBD8DF7004D3F91 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				492A49411FD92C11009AE5EC /* CoursesVC */,
 				E2C4A6D51FBD8DD6004D3F91 /* AddCourseVC */,
 			);
 			path = Controllers;
@@ -109,7 +135,6 @@
 				E2C4A6D61FBD8DF7004D3F91 /* Controllers */,
 				E2ECA27D1FB45E0400579996 /* Models */,
 				E2ECA26B1FB43FF000579996 /* AppDelegate.swift */,
-				E2ECA26D1FB43FF000579996 /* ViewController.swift */,
 				E2ECA26F1FB43FF000579996 /* Main.storyboard */,
 				E2ECA2721FB43FF000579996 /* Assets.xcassets */,
 				E2ECA2741FB43FF000579996 /* LaunchScreen.storyboard */,
@@ -189,6 +214,7 @@
 			files = (
 				E2ECA2761FB43FF000579996 /* LaunchScreen.storyboard in Resources */,
 				E2ECA2731FB43FF000579996 /* Assets.xcassets in Resources */,
+				492A49481FD94552009AE5EC /* CourseItemCell.xib in Resources */,
 				E2ECA2711FB43FF000579996 /* Main.storyboard in Resources */,
 				E2C4A6DA1FBD8E9E004D3F91 /* AddCourseVC.xib in Resources */,
 			);
@@ -205,11 +231,13 @@
 				E2ECA2821FB45F1500579996 /* Course.swift in Sources */,
 				E2C4A6D91FBD8E9E004D3F91 /* AddCourseVC.swift in Sources */,
 				E29F6F0F1FC6C644003D7A67 /* DayType.swift in Sources */,
-				E2ECA26E1FB43FF000579996 /* ViewController.swift in Sources */,
+				E2ECA26E1FB43FF000579996 /* CoursesVC.swift in Sources */,
 				E29F6F111FC6CEF9003D7A67 /* AddCourseVCXPickerDelegate.swift in Sources */,
 				E29F6F131FC6CF8B003D7A67 /* AddCourseVCXPickerDataSource.swift in Sources */,
+				492A49471FD94552009AE5EC /* CourseItemCell.swift in Sources */,
 				E2ECA26C1FB43FF000579996 /* AppDelegate.swift in Sources */,
 				8412F1A61FB5EA2500A52633 /* Student.swift in Sources */,
+				492A49431FD92C77009AE5EC /* FileHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
