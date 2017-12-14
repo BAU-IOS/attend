@@ -44,10 +44,10 @@
                         <constraints>
                             <constraint firstItem="Hxi-3g-3DE" firstAttribute="top" secondItem="WnY-uc-9ku" secondAttribute="top" constant="12" id="1Mn-6o-BwU"/>
                             <constraint firstItem="Qnd-7K-aJm" firstAttribute="top" secondItem="WnY-uc-9ku" secondAttribute="top" constant="12" id="6ig-97-jWQ"/>
-                            <constraint firstItem="KHg-03-PqT" firstAttribute="leading" secondItem="WnY-uc-9ku" secondAttribute="leading" constant="12" id="ADR-pi-83V"/>
+                            <constraint firstItem="KHg-03-PqT" firstAttribute="leading" secondItem="WnY-uc-9ku" secondAttribute="leading" constant="12" id="Clr-Mf-UWi"/>
                             <constraint firstAttribute="trailing" secondItem="Qnd-7K-aJm" secondAttribute="trailing" constant="12" id="QbS-YZ-Ujk"/>
-                            <constraint firstItem="KHg-03-PqT" firstAttribute="top" secondItem="Hxi-3g-3DE" secondAttribute="bottom" constant="16" id="jhf-Yd-ngK"/>
                             <constraint firstItem="Hxi-3g-3DE" firstAttribute="leading" secondItem="WnY-uc-9ku" secondAttribute="leading" constant="12" id="rZN-yB-CRi"/>
+                            <constraint firstItem="KHg-03-PqT" firstAttribute="top" secondItem="Hxi-3g-3DE" secondAttribute="bottom" constant="16" id="sjj-z3-LqD"/>
                         </constraints>
                     </view>
                 </subviews>

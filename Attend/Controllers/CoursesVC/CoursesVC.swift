@@ -20,9 +20,12 @@ class CoursesVC: UIViewController
         self.navigationItem.title = "Courses"
         self.addCourseButtonToRight()
         self.prepareCollectionView()
-        
-        let courseModels = self.getCourseModels()
-        debugPrint("Our saved courses \(courseModels)")
+    }
+    
+    override func viewWillAppear(_ animated: Bool)
+    {
+        super.viewWillAppear(animated)
+        self.loadCoursesToVC()
     }
     
     func prepareCollectionView()
@@ -43,7 +46,8 @@ class CoursesVC: UIViewController
     
     func loadCoursesToVC()
     {
-        
+        self.courses = getCourseModels()
+        self.collectionViewCourses.reloadData()
     }
     
     func getCourseModels() -> [Course]
@@ -75,7 +79,7 @@ class CoursesVC: UIViewController
     @objc func userClickedAddCourse()
     {
         let addCourseVC = AddCourseVC(nibName: nil, bundle: nil)
-        
+  
         self.navigationController?.pushViewController(
             addCourseVC,
             animated: true
@@ -85,13 +89,30 @@ class CoursesVC: UIViewController
 
 extension CoursesVC: UICollectionViewDelegate
 {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath)
+    {
+        let selectedCourse = self.courses[indexPath.row]
+        debugPrint("Selected course is \(selectedCourse.courseName)")
+    }
+}
 
+extension CoursesVC: UICollectionViewDelegateFlowLayout
+{
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let cellWidth = UIScreen.main.bounds.size.width
+        let sizeOfCell = CGSize(width: cellWidth, height: 100)
+        return sizeOfCell
+    }
 }
 
 extension CoursesVC: UICollectionViewDataSource
 {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return self.courses.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
